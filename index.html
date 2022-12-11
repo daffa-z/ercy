@@ -14,8 +14,14 @@
 
 <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
 
-  <title>CodePen - Sliding Image Track</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+  <title>🥰Ercy Alvionika Sisti🥰</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik&display=swap" rel="stylesheet">
@@ -100,6 +106,32 @@ body.menu-toggled > .meta-link > span {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
+
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
 </style>
 
   <script>
@@ -118,23 +150,34 @@ body.menu-toggled > .meta-link > span {
 </head>
 
 <body translate="no" >
-  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-  <img class="image" src="https://i.imgur.com/lUvjtzn.jpg" draggable="false" />
-  <img class="image" src="https://i.imgur.com/UtX0XRu.jpg" draggable="false" />
-  <img class="image" src="https://i.imgur.com/0hKEQLX.jpg" draggable="false" />
-  <img class="image" src="https://i.imgur.com/IzAtFi1.jpg" draggable="false" />
-  <img class="image" src="https://i.imgur.com/ihYgD8D.jpg" draggable="false" />
+<body>
+ <div class="waviy">
+   <span style="--i:1">E</span>
+   <span style="--i:2">R</span>
+   <span style="--i:3">C</span>
+   <span style="--i:4">Y</span>
+   <span style="--i:4"> </span>
+   <span style="--i:4"> </span>
+   <span style="--i:4"> </span>
+   <span style="--i:5">A</span>
+   <span style="--i:6">L</span>
+   <span style="--i:7">V</span>
+   <span style="--i:8">I</span>
+   <span style="--i:9">O</span>
+   <span style="--i:10">N</span>
+   <span style="--i:11">I</span>
+   <span style="--i:12">K</span>
+   <span style="--i:13">A</span>   
   </div>
+</body>
 
-<a id="source-link" class="meta-link" href="https://camillemormal.com" target="_blank">
-  <i class="fa-solid fa-link"></i>
-  <span>Source</span>
-</a>
-
-<a id="yt-link" class="meta-link" href="https://youtu.be/PkADl0HubMY" target="_blank">
-  <i class="fa-brands fa-youtube"></i>
-  <span>7 min tutorial</span>
-</a>
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+    <img class="image" src="https://i.imgur.com/0hKEQLX.jpg" draggable="false" />
+    <img class="image" src="https://i.imgur.com/ihYgD8D.jpg" draggable="false" />
+    <img class="image" src="https://i.imgur.com/IzAtFi1.jpg" draggable="false" />
+    <img class="image" src="https://i.imgur.com/UtX0XRu.jpg" draggable="false" />
+    <img class="image" src="https://i.imgur.com/lUvjtzn.jpg" draggable="false" />
+  </div>
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
 
   <script src='https://kit.fontawesome.com/944eb371a4.js'></script>
